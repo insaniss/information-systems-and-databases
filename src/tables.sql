@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS scheme (
 
 CREATE TABLE IF NOT EXISTS control (
     control_id  serial,
-    time        timestamp   NOT NULL,
+    date        timestamp   NOT NULL,
     PRIMARY KEY (control_id)
 );
 
