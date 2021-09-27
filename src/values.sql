@@ -2,9 +2,9 @@
 INSERT INTO scheme(type, height, width, model, country) VALUES ('Structural', 24.1, 16.4, 'ID-1.8', 'China');
 INSERT INTO scheme(type, height, width, country) VALUES ('Functional', 34.25, 18.6, 'Russia');
 -- control
-INSERT INTO control(time) VALUES ('2020-09-11 00:00:00');
-INSERT INTO control(time) VALUES ('1999-11-23 12:23:59');
-INSERT INTO control(time) VALUES ('2000-01-11 00:59:59');
+INSERT INTO control(time, duration) VALUES ('2020-09-11 00:00:00', 5034);
+INSERT INTO control(time, duration) VALUES ('1999-11-23 12:23:59', 100);
+INSERT INTO control(time, duration) VALUES ('2000-01-11 00:59:59', 54134);
 -- color
 INSERT INTO color(name, red, green, blue) VALUES ('red', 255, 0, 0);
 INSERT INTO color(name, red, green, blue) VALUES ('white', 255, 255, 255);
