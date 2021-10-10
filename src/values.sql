@@ -17,15 +17,17 @@ INSERT INTO cardbox(width, height, color) VALUES (34.5, 56.25, 1);
 INSERT INTO cardbox(width, height, color) VALUES (32.99, 48.09, 5);
 -- card
 INSERT INTO card(name, format, cardbox, color) VALUES ('lithium-ion', 'ID-1', 2, 4);
-INSERT INTO card(name, color) VALUES ('electric-card', 3);
-INSERT INTO card(name, format, color) VALUES ('turbo-io', 'ID-3', 1);
+INSERT INTO card(name, cardbox, color) VALUES ('electric-card', 1, 3);
+INSERT INTO card(name, format, cardbox, color) VALUES ('turbo-io', 'ID-3', 1, 1);
 INSERT INTO card(name, format, color) VALUES ('electric-card', 'ID-2', 4);
 -- tester
 INSERT INTO tester(name, year, card) VALUES ('Service type tester', 2008, 2);
-INSERT INTO tester(name, year, company, card) VALUES ('Quick-check in-circuit checker', 2018, 'IO', 4);
+INSERT INTO tester(name, year, company, card) VALUES ('Quick-check in-circuit checker', 2018, 'IO', 1);
+INSERT INTO tester(name, year, company, card) VALUES ('Service type tester', 2010, 'SpaceX', 3);
 -- testing_scheme
 INSERT INTO testing_scheme(tester, scheme, control) VALUES (1, 2, 3);
 INSERT INTO testing_scheme(tester, scheme, control) VALUES (2, 1, 2);
+INSERT INTO testing_scheme(tester, scheme, control) VALUES (2, 1, 1);
 -- display
 INSERT INTO display(resolution, diagonal, power_saver) VALUES ('4:3', 13.4, false);
 INSERT INTO display(resolution, diagonal, power_saver) VALUES ('16:9', 15.6, true);
