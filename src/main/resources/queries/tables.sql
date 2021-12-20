@@ -75,7 +75,7 @@ create table if not exists locations
 create table if not exists cards
 (
     id              serial           primary key,
-    number          smallint         not null,
+    number          smallint         not null check (number >= 1 and number <= 10),
     suit            varchar(16)      not null
 );
 
@@ -112,8 +112,10 @@ create table if not exists game_histories
     id              serial           primary key,
     game_id         integer          not null,
     player_id       integer          not null,
+    player_role     prole,
     animal_id       integer          not null,
     state           boolean          not null,
+    group_number    integer,
 
     unique (game_id, player_id),
     unique (game_id, animal_id),

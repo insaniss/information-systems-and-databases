@@ -13,3 +13,4 @@ drop table if exists animals;
 -- DROP ENUM
 drop type if exists gender;
 drop type if exists animal;
+drop type if exists prole;

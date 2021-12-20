@@ -1,9 +1,3 @@
-create type gender as enum
-(
-    'Male',
-    'Female'
-);
-
 create type animal as enum
 (
     'Lion',
@@ -39,4 +33,16 @@ create type animal as enum
     'Parrot',
     'Snake',
     'Chameleon'
+);
+
+create type gender as enum
+(
+    'Male',
+    'Female'
+);
+
+create type prole as enum
+(
+    'Member',
+    'Leader'
 );
