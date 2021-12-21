@@ -1,2 +1,2 @@
-create function help() returns text language plpgsql as
+create function help() returns text language sql as
     $help$ SELECT lab FROM branches; $help$
